@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>imgur Roulette</title>
+<meta name="description" content="Flexible Technological Solutions">
+<meta name="author" content="etaPlus Solutions">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" media="screen" href="styles.css">
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#submit').click(function(){
+            $.post("imgur.php", $("#mycontactform").serialize(),  function(response) {
+            $('#success').html(response).show();
+        });
+        return false;
+        });
+    });
+</script>
+</head>
+<body>
+<div>
+<img id="background" src="backg.jpg" alt="imgur Roulette" title="imgur Roulette" /> 
+</div>
+<center>
+<br /><br />
+<form action="" method="post">
+<input type="submit" value="Do you feel lucky?" id="submit" class="btn"/>
+<p id="success"></p>
+</form>
+</center>
+</body>
+</html> 
