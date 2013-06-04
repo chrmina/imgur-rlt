@@ -1,17 +1,17 @@
 <?php
-//Generate Random String
-function imgurCode()
-{
+
+function imgurCode() {
+  //Generate Random String
   $str = "ABCDEFGHJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz012345678923456789";
   $randomized = "";
 
-  for($i=0; $i < 5; $i++)
-    {
-      $randomized .= $str{rand() % strlen($str)};
-    }
+  for($i=0; $i < 5; $i++) {
+    $randomized .= $str{mt_rand(0, strlen($str)-1)};
+  }
 
   return $randomized;
 }
+
 echo '<br /><br />';
 echo '<table>';
 
