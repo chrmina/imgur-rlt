@@ -12,54 +12,22 @@ function imgurCode() {
   return $randomized;
 }
 
+function imgout() {
+    echo '<td>';
+    $code = imgurCode();
+    echo '<a href="http://i.imgur.com/'.$code.'.jpg" rel="lightbox" title="'.$code.'"><img src="http://i.imgur.com/'.$code.'.jpg" width="150" height="150"></a>';
+    echo '</td>';
+}
+
 echo '<br /><br />';
 echo '<table>';
-
-echo '<tr>';
-echo '<td>';
-$code = imgurCode();
-echo '<a href="http://i.imgur.com/'.$code.'.jpg" rel="lightbox" title="'.$code.'"><img src="http://i.imgur.com/'.$code.'.jpg" width="150" height="150"></a>';
-echo '</td>';
-echo '<td>';
-$code = imgurCode();
-echo '<a href="http://i.imgur.com/'.$code.'.jpg" rel="lightbox" title="'.$code.'"><img src="http://i.imgur.com/'.$code.'.jpg" width="150" height="150"></a>';
-echo '</td>';
-echo '<td>';
-$code = imgurCode();
-echo '<a href="http://i.imgur.com/'.$code.'.jpg" rel="lightbox" title="'.$code.'"><img src="http://i.imgur.com/'.$code.'.jpg" width="150" height="150"></a>';
-echo '</td>';
-echo '</tr>';
-
-echo '<tr>';
-echo '<td>';
-$code = imgurCode();
-echo '<a href="http://i.imgur.com/'.$code.'.jpg" rel="lightbox" title="'.$code.'"><img src="http://i.imgur.com/'.$code.'.jpg" width="150" height="150"></a>';
-echo '</td>';
-echo '<td>';
-$code = imgurCode();
-echo '<a href="http://i.imgur.com/'.$code.'.jpg" rel="lightbox" title="'.$code.'"><img src="http://i.imgur.com/'.$code.'.jpg" width="150" height="150"></a>';
-echo '</td>';
-echo '<td>';
-$code = imgurCode();
-echo '<a href="http://i.imgur.com/'.$code.'.jpg" rel="lightbox" title="'.$code.'"><img src="http://i.imgur.com/'.$code.'.jpg" width="150" height="150"></a>';
-echo '</td>';
-echo '</tr>';
-
-echo '<tr>';
-echo '<td>';
-$code = imgurCode();
-echo '<a href="http://i.imgur.com/'.$code.'.jpg" rel="lightbox" title="'.$code.'"><img src="http://i.imgur.com/'.$code.'.jpg" width="150" height="150"></a>';
-echo '</td>';
-echo '<td>';
-$code = imgurCode();
-echo '<a href="http://i.imgur.com/'.$code.'.jpg" rel="lightbox" title="'.$code.'"><img src="http://i.imgur.com/'.$code.'.jpg" width="150" height="150"></a>';
-echo '</td>';
-echo '<td>';
-$code = imgurCode();
-echo '<a href="http://i.imgur.com/'.$code.'.jpg" rel="lightbox" title="'.$code.'"><img src="http://i.imgur.com/'.$code.'.jpg" width="150" height="150"></a>';
-echo '</td>';
-echo '</tr>';
-
+for($j=0; $j < 3; $j++) {
+  echo '<tr>';
+  for($i=0; $i < 3; $i++) {
+    imgout();
+  }
+  echo '</tr>';
+}
 echo '</table>';
 
 ?>
