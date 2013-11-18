@@ -2,7 +2,7 @@
 
 **Demo:** [http://chrmina.heliohost.org/](http://chrmina.heliohost.org/)
 
-	   **Requirements:** php, sqlite3
+**Requirements:** php, sqlite3
 
 ### How to use ###
 1. Run `sqlite.php` to create the sqlite3 database file.
