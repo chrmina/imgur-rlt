@@ -16,7 +16,7 @@
 <script>
     $(document).ready(function(){
         $('#submit').click(function(){
-            $.post("imgur.php", $("#mycontactform").serialize(),  function(response) {
+            $.post("imgrand.php", $("#mycontactform").serialize(),  function(response) {
             $('#success').html(response).show();
         });
         return false;
