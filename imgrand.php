@@ -41,7 +41,7 @@
     {
         echo '<td>';
         $url = mklink();
-        echo '<a href="'.$url.'" rel="lightbox" title="'.$url.'"><img src="'.$url.'" width="150" height="150"></a>';
+        echo '<a class="example-image-link" href="'.$url.'" data-lightbox="example-set" data-title="'.$url.'"><img class="example-image" src="'.$url.'" width="150" height="150"></a>';
         echo '</br><center><a href="https://www.google.com/searchbyimage?&image_url='.$url.'" target="_blank">Reverse Image Search</a></center>';
         echo '</td>';
     }

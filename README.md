@@ -1,7 +1,5 @@
 # Simple imgur roulette.
 
-Creates a sqlite3 database containing imgur active links and selects pictures to display in random.
-
 **Demo:** [http://chrmina.heliohost.org/](http://chrmina.heliohost.org/)
 
 **Requirements:** php, sqlite3

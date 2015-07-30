@@ -15,7 +15,7 @@
    {
       echo "Opened database successfully.\n";
    }
-   
+
    function createurl()
    {
       //Generate Random String
@@ -38,7 +38,7 @@
       // $retcode > 400 -> not found, $retcode = 200, found.
       //echo $retcode."\n";
       //echo $link."\n";
-      curl_close($ch);   
+      curl_close($ch);
       if ($retcode == "302")
       {
          return FALSE;
@@ -65,7 +65,7 @@
       }
       else
       {
-         echo "Record created successfully.\n";
+         echo "Record created successfully: ".$link."\n";
       }
    }
    $db->close();
