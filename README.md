@@ -1,6 +1,6 @@
 # Simple imgur roulette.
 
-**Demo:** [http://chrmina.heliohost.org/](http://chrmina.heliohost.org/)
+**Demo:** [http://christos.heliohost.org/imgur-rlt](http://christos.heliohost.org/imgur-rlt)
 
 **Requirements:** php, sqlite3
 
